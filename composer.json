@@ -10,12 +10,15 @@
         }
     ],
     "require": {
-        "sabre/event": "^5",
         "psalm/psalm-plugin-api": "^0.4",
         "vimeo/psalm": "^7|dev-master"
     },
     "require-dev": {
-        "squizlabs/php_codesniffer": "^3.3"
+        "squizlabs/php_codesniffer": "^3.3",
+        "sabre/event": "^5"
+    },
+    "conflict": {
+        "sabre/event": "<5.0"
     },
     "extra": {
         "psalm": {
